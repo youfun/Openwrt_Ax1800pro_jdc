@@ -22,7 +22,6 @@
 #cp -r openwrt-packages/luci-app-netdata package/
 #rm -rf openwrt-packages
 
-sed -i  'openwrt_base  https://downloads.immortalwrt.org/releases/23.05.0/packages/aarch64_cortex-a53/base/' feeds.conf.default
 
 
 
@@ -47,5 +46,11 @@ git clone --depth=1 -b master https://github.com/jerrykuku/luci-app-argon-config
 #mosdns
 #git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
 #git clone --depth=1 https://github.com/fw876/helloworld.git
+
+
+sed -i  'openwrt_base  https://downloads.immortalwrt.org/releases/23.05.0/packages/aarch64_cortex-a53/base/' feeds.conf.default
+
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 popd
