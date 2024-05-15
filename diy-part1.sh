@@ -48,9 +48,5 @@ git clone --depth=1 -b master https://github.com/jerrykuku/luci-app-argon-config
 #git clone --depth=1 https://github.com/fw876/helloworld.git
 
 
-sed -i  'openwrt_base  https://downloads.immortalwrt.org/releases/23.05.0/packages/aarch64_cortex-a53/base/' feeds.conf.default
-
-./scripts/feeds update -a
-./scripts/feeds install -a
 
 popd
