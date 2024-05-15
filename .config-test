@@ -1167,6 +1167,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 
 CONFIG_PACKAGE_luci-app-alist=y
 CONFIG_PACKAGE_luci-app-ksmbd=y
+CONFIG_PACKAGE_firewall4=y
 
 
 CONFIG_PACKAGE_nano=y
