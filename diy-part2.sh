@@ -20,7 +20,7 @@
 
 
 
-sed -i  'openwrt_base  https://downloads.immortalwrt.org/releases/23.05.0/packages/aarch64_cortex-a53/base/' feeds.conf.default
+sed -i  'openwrt_base  https://downloads.immortalwrt.org/releases/23.05.0/packages/aarch64_cortex-a53/base' feeds.conf.default
 
 ./scripts/feeds update 
 ./scripts/feeds install 
